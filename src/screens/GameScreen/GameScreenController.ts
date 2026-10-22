@@ -79,6 +79,9 @@ export class GameScreenController extends ScreenController {
 		this.view.randomizeLemonPosition();
 
 		// TODO: Task 4 - Play the squeeze sound
+		const squeezeSound = new Audio("/squeeze.mp3");
+		squeezeSound.play();
+		squeezeSound.currentTime = 0;
 	}
 
 	/**
